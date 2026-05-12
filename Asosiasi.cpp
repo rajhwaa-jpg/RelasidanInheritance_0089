@@ -50,3 +50,8 @@ public:
 
 };
 
+//pendaftaran prosedur . prosedur  dari  class dokter dan class pasien diluar class
+void pasien::tambahanDokter(dokter* pDokter) {
+    daftar_dokter.push_back(pDokter);
+};
+
