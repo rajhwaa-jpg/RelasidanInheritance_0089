@@ -40,4 +40,13 @@ public:
         cout << "Dokter \"" << nama << "\" ada\n";
     }
 
-    
+    ~dokter() {
+        cout << "Dokter \"" << nama << "\" tidak ada\n";
+    }
+
+    //deklarasi prosedur tambahanPasien() dan cetakPasien()
+    void tambahanPasien(pasien*);
+    void cetakPasien();
+
+};
+
