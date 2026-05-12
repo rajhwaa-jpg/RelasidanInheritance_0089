@@ -27,3 +27,6 @@ public:
     void cetakDokter();
 };
 
+//pembuatan class dokter
+class dokter {
+
