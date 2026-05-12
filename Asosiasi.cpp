@@ -69,3 +69,29 @@ void dokter::tambahanPasien(pasien* pPasien) {
     pPasien->tambahanDokter(this);
 }
 
+void dokter::cetakPasien() {
+    cout << "Daftar Pasien dari Dokter \"" << this->nama << "\";\n";
+    for (auto& a : daftar_pasien)
+    {
+        cout << a->nama << "\n";
+    }
+    cout << endl;
+}
+
+int main() {
+  dokter*varDokter1 = new dokter("dr.budi");
+  dokter*varDokter2 = new dokter("dr.cuti");
+  pasien*varPasien1 = new pasien("lontong");
+  pasien*varPasien2 = new pasien("rusdi");
+
+  varDokter1->tambahanPasien(varPasien1);
+  varDokter1->tambahanPasien(varPasien2);
+  varDokter2->tambahanPasien(varPasien1);
+
+  varDokter1->cetakPasien();
+  varDokter2->cetakPasien();
+  varPasien1->cetakDokter();
+  varPasien2->cetakDokter();
+
+  return 0;
+}
