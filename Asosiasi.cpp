@@ -22,4 +22,8 @@ public:
         cout << "pasien \"" << nama << "\"" << " tidak ada\n";
     };
 
-    
+    //deklarasi prosedur tambahanDokter() dan cetakDokter()
+    void tambahanDokter(dokter*);
+    void cetakDokter();
+};
+
